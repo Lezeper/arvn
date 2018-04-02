@@ -1,0 +1,11 @@
+<div *ngIf="!currentUser.username; else show_user">
+  <a [routerLink]="['/login']">Have an account?</a>
+  <a [routerLink]="['/register']">Need an account?</a>
+</div>
+
+<ng-template #show_user>
+  Welcome: {{currentUser.username}}
+  <button class="btn btn-sm" (click)="logOut()">Log Out</button>
+</ng-template>
+
+<article-list></article-list>

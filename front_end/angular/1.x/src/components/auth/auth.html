@@ -1,0 +1,6 @@
+<form ng-submit="$ctrl.submitForm()">
+  <input type="text" ng-show="$ctrl.authType === 'register'" ng-model="$ctrl.formData.username"/>
+  <input type="email" ng-model="$ctrl.formData.email"/>
+  <input type="password" ng-model="$ctrl.formData.password"/>
+  <button type="submit" ng-bind="::$ctrl.title"></button>
+</form>

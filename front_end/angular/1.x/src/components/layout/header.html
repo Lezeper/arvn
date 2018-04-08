@@ -1,9 +1,9 @@
-<div ng-show="$ctrl.currentUser">
+<div show-authed="true">
   <p>Hello! {{$ctrl.currentUser.username}}</p>
   <button ng-click="$ctrl.logout()">Logout</button>
 </div>
 
-<div ng-show="!$ctrl.currentUser">
+<div show-authed="false">
     <a ui-sref="app.login">Have an account?</a>
     <a ui-sref="app.register">Need an account?</a>
 </div>

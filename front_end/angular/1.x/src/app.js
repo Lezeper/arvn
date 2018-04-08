@@ -19,7 +19,8 @@ const requires = [
   'app.home',
   'app.services',
   'app.auth',
-  'app.article'
+  'app.article',
+  'app.shared'
 ];
 
 // Mount on window for testing

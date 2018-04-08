@@ -4,11 +4,11 @@ class AppHeaderCtrl {
 
     this.appName = AppConstants.appName;
     this._User = User;
-    this.currentUser = User.currentUser;
+    this.currentUser = this._User.currentUser;
+  }
 
-    $rootScope.$on('user', () => {
-      this.currentUser = User.currentUser;
-    })
+  setCurrentUser(val) {
+    this.currentUser = val;
   }
 
   logout() {

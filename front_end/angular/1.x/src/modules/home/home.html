@@ -1,4 +1,5 @@
 <div>
+  <a ui-sref="app.test">Go to test</a>
   <ul class="list-group">
     <li class="list-group-item" ng-repeat="article in $ctrl.articles">
       <a ui-sref="app.article({ slug: article.slug })" ng-bind="::article.title"></a>

@@ -7,7 +7,7 @@ import appConfig  from './config/app.config';
 import appRun     from './config/app.run';
 
 import './config/app.templates';
-import './components'
+import './modules'
 import './service';
 
 
@@ -20,7 +20,8 @@ const requires = [
   'app.services',
   'app.auth',
   'app.article',
-  'app.shared'
+  'app.shared',
+  'app.test'
 ];
 
 // Mount on window for testing

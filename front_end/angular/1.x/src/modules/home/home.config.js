@@ -6,7 +6,7 @@ function HomeConfig($stateProvider) {
     url: '/',
     controller: 'HomeCtrl',
     controllerAs: '$ctrl',
-    templateUrl: 'components/home/home.html',
+    templateUrl: 'modules/home/home.html',
     title: 'Home'
   });
 

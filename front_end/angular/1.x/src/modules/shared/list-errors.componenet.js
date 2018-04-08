@@ -8,5 +8,5 @@ export default {
   },
   transclude: true,
   controller: ListErrorsCtrl,
-  templateUrl: 'components/shared/list-errors.html'
+  templateUrl: 'modules/shared/list-errors.html'
 }

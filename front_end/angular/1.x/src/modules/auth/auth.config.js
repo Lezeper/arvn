@@ -6,14 +6,14 @@ export default function AuthConfig ($stateProvider, $httpProvider) {
     url: '/login',
     controller: 'AuthCtrl',
     controllerAs: '$ctrl',
-    templateUrl: 'components/auth/auth.html',
+    templateUrl: 'modules/auth/auth.html',
     title: 'Sign in',
   })
   .state('app.register', {
     url: '/register',
     controller: 'AuthCtrl',
     controllerAs: '$ctrl',
-    templateUrl: 'components/auth/auth.html',
+    templateUrl: 'modules/auth/auth.html',
     title: 'Sign up',
   });
 }

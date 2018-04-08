@@ -33,10 +33,7 @@ export default class User {
   getUser(token) {
     return this._$http({
       url: this._AppConstants.api + '/user',
-      method: 'GET',
-      headers: {
-        Authorization: 'Token ' + token
-      }
+      method: 'GET'
     })
   }
 

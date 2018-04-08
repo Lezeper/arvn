@@ -6,7 +6,7 @@ export default function ArticleConfig($stateProvider) {
     url: '/article/:slug',
     controller: 'ArticleCtrl',
     controllerAs: '$ctrl',
-    templateUrl: 'components/article/article.html',
+    templateUrl: 'modules/article/article.html',
     title: 'Article',
     resolve: {
       currentUser: function(User, $state, $timeout) {

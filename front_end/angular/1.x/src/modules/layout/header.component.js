@@ -18,5 +18,5 @@ class AppHeaderCtrl {
 
 export default {
   controller: AppHeaderCtrl,
-  templateUrl: 'components/layout/header.html'
+  templateUrl: 'modules/layout/header.html'
 };

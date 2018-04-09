@@ -93,5 +93,6 @@ gulp.task('default', ['html', 'browserify', 'css'], function() {
 
   gulp.watch("src/index.html", ['html']);
   gulp.watch(viewFiles, ['views']);
+  gulp.watch(cssFiles, ['css']);
   gulp.watch(jsFiles, ['browserify']);
 });

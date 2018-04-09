@@ -1,0 +1,17 @@
+<form [formGroup]="myForm" (ngSubmit)="submitForm()">
+  <fieldset class="form-group">
+    <label for="phoneNumber" class="form-label">Phone Number</label>
+    <input type="text" formControlName="phoneNumber" class="form-control" maxlength="12" 
+      (blur)="onBlur()" (focus)="onFocus()"/>
+  </fieldset>
+  <button type="submit" class="btn btn-primary" [disabled]="!myForm.valid">Submit</button>
+</form>
+
+<form #f="ngForm" (ngSubmit)="submitOther()">
+  <fieldset class="form-group">
+    <label for="ssn" class="form-label">SSN</label>
+    <input type="text" class="form-control" maxlength="11" name="ssn" required
+      [(ngModel)]="otherForm.ssn" ssn-format/> 
+  </fieldset>
+  <button type="submit" class="btn btn-primary" [disabled]="f.invalid">Submit</button>
+</form>

@@ -6,7 +6,7 @@ export default class AuthCtrl {
     this._$state = $state;
     this.title = $state.current.title;
     this.authType = $state.current.name.replace('app.', '');
-    this.formData = null;
+    this.formData = {};
   }
 
   submitForm() {

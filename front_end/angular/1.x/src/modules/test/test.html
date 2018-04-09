@@ -1,1 +1,36 @@
-<p>Test page works!</p>
+<form name="myForm">
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" id="email" ng-model="$ctrl.formData.email" required/>{{$ctrl.formData.email}}
+    <small>We'll nerver share your email with others.</small>
+  </div>
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input type="text" class="form-control" id="username" ng-model="$ctrl.formData.username"/>
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" ng-model="$ctrl.formData.password">
+  </div>
+  <div class="form-group">
+    <label for="passwordComfirm">Confirm Password</label>
+    <input type="password" class="form-control" id="passwordComfirm" ng-model="$ctrl.formData.passwordConfirm">
+  </div>
+  <div class="form-group">
+    <p class="error-msg" ng-show="$ctrl.formInvalidCtrl.invalidPhoneNumber">Invalid Phone Number</p>
+    <label for="phone">Phone Number</label>
+    <input type="text" class="form-control" id="phone" name="phoneNumber" placeholder="XXX-XXX-XXXX"
+      ng-model="$ctrl.formData.phoneNumber" 
+      ng-pattern="$ctrl.phoneNumberPattern" 
+      ng-blur="$ctrl.check(myForm.phoneNumber, 'invalidPhoneNumber')" phone-number required>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input">
+        Accept the agreement
+      </label>
+    </div>
+  </div>{{$ctrl.formData.phoneNumber}}
+  <button type="submit" class="btn btn-primary" ng-disabled="myForm.$invalid">Submit</button>
+</form>

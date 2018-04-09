@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { AuthModule } from './auth/auth.module';
 import { ArticleModule } from './article/article.module';
+import { TestModule } from './test/test.module';
 
 import {
   HeaderComponent,
@@ -32,7 +33,8 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([]);
     SharedModule,
     HomeModule,
     AuthModule,
-    ArticleModule
+    ArticleModule,
+    TestModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: HttpTokenInterceptor, multi: true },

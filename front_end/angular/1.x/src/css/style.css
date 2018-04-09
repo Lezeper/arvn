@@ -1,3 +1,7 @@
 #footer {
   text-align: center;
 }
+
+.error-msg {
+  color: red;
+}

@@ -1,6 +1,7 @@
 <div *ngIf="!currentUser.username; else show_user">
   <a [routerLink]="['/login']">Have an account?</a>
   <a [routerLink]="['/register']">Need an account?</a>
+  <a [routerLink]="['/test']">Go to test</a>
 </div>
 
 <ng-template #show_user>

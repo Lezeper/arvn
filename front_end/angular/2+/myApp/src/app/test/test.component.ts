@@ -3,7 +3,8 @@ import { FormBuilder, FormGroup, FormControl, Validator, Validators, NgForm } fr
 
 @Component({
   selector: 'app-test',
-  templateUrl: './test.component.html'
+  templateUrl: './test.component.html',
+  styleUrls: ['test.component.css']
 })
 export class TestComponent implements OnInit {
   

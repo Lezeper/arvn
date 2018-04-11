@@ -1,0 +1,13 @@
+#main {
+  display: flex;
+  background-color: lightgray;
+}
+
+.block {
+  width: 100px;
+  line-height: 75px;
+  background-color: dodgerblue;
+  color: white;
+  margin: 10px;
+  text-align: center;
+}

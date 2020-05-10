@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import { fetchPost, deletePost } from '../../actions/post';
 import { toRedirect } from '../../actions/common';
+import { Post } from '../../models/Post';
 
 class PostDetails extends Component {
   componentWillMount = () => {
@@ -23,6 +24,9 @@ class PostDetails extends Component {
   }
 
   render = () => {
+
+    let post = new Post(this.props.post);
+
     return (
       <div>
         <Link to="/">Back To Index</Link>
@@ -33,10 +37,10 @@ class PostDetails extends Component {
           Delete Post
         </button>
         {
-          this.props.post ? 
+          post ? 
           <div>
-            <h3>{this.props.post.title}</h3>
-            <p>{this.props.post.body}</p>
+            <h3>{post.title}</h3>
+            <p>{post.body}</p>
           </div>
         : <p>Loading...</p>
         }

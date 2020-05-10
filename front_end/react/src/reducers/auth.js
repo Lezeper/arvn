@@ -23,7 +23,7 @@ export default (state = {}, action) => {
     case APP_LOAD:
       return {
         ...state,
-        currentUser: action.payload ? action.payload.data.user : null        
+        currentUser: (action.payload && action.payload.data) ? action.payload.data.user : null        
       };
     default:
       return state;
